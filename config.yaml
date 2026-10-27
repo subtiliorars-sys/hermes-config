@@ -1,55 +1,165 @@
+# Routing-only reference. Use install.py; do not overwrite your full config.
 model:
-  provider: nous
   base_url: https://inference-api.nousresearch.com/v1
-  default: meituan/longcat-2.0:free
+  default: openai/gpt-6-astra
+  provider: nous
 fallback_providers:
-- provider: nous
-  model: upstage/solar-pro4:free
-- provider: nous
-  model: inclusionai/ling-3.0-flash-sante:free
-- provider: nous
-  model: stepfun/step-3.7-flash:free
-- provider: nous
-  model: poolside/laguna-xs-2.1:free
-- provider: nous
-  model: tencent/hy3:free
-- provider: nous
-  model: tencent/hy4-preview
-- provider: openrouter
-  model: nex-agi/nex-n2.5-pro:free
-- provider: openrouter
-  model: google/gemma-4-26b-a4b-it:free
-- provider: openrouter
-  model: nex-agi/nex-n2.5-mini:free
-- provider: openrouter
-  model: nvidia/nemotron-3-super-120b-a12b:free
-- provider: openrouter
-  model: nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
-- provider: openrouter
-  model: nvidia/nemotron-3-ultra-550b-a55b:free
-- provider: openrouter
-  model: inclusionai/ling-3.0-flash-fin:free
-- provider: openrouter
-  model: inclusionai/ling-3.0-flash-vl:free
-- provider: openrouter
-  model: poolside/laguna-s-2.1:free
-- provider: openrouter
-  model: liquid/lfm-2.5-2.6b:free
-- provider: openrouter
-  model: dots-studio/dots-3-note-preview:free
-- provider: openrouter
-  model: cohere/north-mini-code:free
-- provider: openrouter
-  model: nvidia/nemotron-3.5-lightning:free
-agent:
-  max_turns: 150
-  api_max_retries: 1
-display:
-  tool_progress: all
-onboarding:
-  seen:
-    tool_progress_prompt: true
-    busy_input_prompt: true
-_config_version: 33
-session_reset:
-  mode: none
+- model: google/gemini-4-argon
+  provider: nous
+- model: deepseek/deepseek-v4.1-flash
+  provider: nous
+- model: stepfun/step-3.7-flash:free
+  provider: nous
+- model: reflection/beam-1.0-501b-a23b:free
+  provider: nous
+- model: poolside/laguna-xs-2.1:free
+  provider: nous
+- model: upstage/solar-pro4:free
+  provider: nous
+- model: tencent/hy3:free
+  provider: nous
+- base_url: http://localhost:11434/v1
+  model: qwen3:4b
+  provider: custom
+auxiliary:
+  vision:
+    provider: nous
+    model: ornith/ornith-1.5-122b:free
+    timeout: 45
+    reasoning_effort: low
+    fallback_chain:
+    - model: reflection/beam-1.0-501b-a23b:free
+      provider: nous
+  compression:
+    provider: nous
+    model: stepfun/step-3.7-flash:free
+    timeout: 120
+    reasoning_effort: low
+    fallback_chain:
+    - model: reflection/beam-1.0-501b-a23b:free
+      provider: nous
+    - model: poolside/laguna-xs-2.1:free
+      provider: nous
+    max_concurrency: 2
+  review:
+    provider: nous
+    model: stepfun/step-3.7-flash:free
+    fallback_chain:
+    - model: reflection/beam-1.0-501b-a23b:free
+      provider: nous
+    - model: poolside/laguna-xs-2.1:free
+      provider: nous
+    reasoning_effort: low
+  title_generation:
+    provider: nous
+    model: stepfun/step-3.7-flash:free
+    timeout: 30
+    reasoning_effort: none
+    fallback_chain:
+    - model: reflection/beam-1.0-501b-a23b:free
+      provider: nous
+    - model: poolside/laguna-xs-2.1:free
+      provider: nous
+  curator:
+    provider: nous
+    model: stepfun/step-3.7-flash:free
+    reasoning_effort: low
+    fallback_chain:
+    - model: reflection/beam-1.0-501b-a23b:free
+      provider: nous
+    - model: poolside/laguna-xs-2.1:free
+      provider: nous
+  background_review:
+    provider: nous
+    model: stepfun/step-3.7-flash:free
+    reasoning_effort: low
+    fallback_chain:
+    - model: reflection/beam-1.0-501b-a23b:free
+      provider: nous
+    - model: poolside/laguna-xs-2.1:free
+      provider: nous
+  moa_reference:
+    provider: nous
+    model: stepfun/step-3.7-flash:free
+    fallback_chain:
+    - model: reflection/beam-1.0-501b-a23b:free
+      provider: nous
+  session_search:
+    fallback_chain:
+    - model: reflection/beam-1.0-501b-a23b:free
+      provider: nous
+    - model: poolside/laguna-xs-2.1:free
+      provider: nous
+    max_concurrency: 2
+    model: stepfun/step-3.7-flash:free
+    provider: nous
+    reasoning_effort: low
+    timeout: 30
+  web_extract:
+    fallback_chain:
+    - model: reflection/beam-1.0-501b-a23b:free
+      provider: nous
+    - model: poolside/laguna-xs-2.1:free
+      provider: nous
+    model: stepfun/step-3.7-flash:free
+    provider: nous
+    reasoning_effort: low
+    timeout: 30
+delegation:
+  model: openai/gpt-6-astra
+  provider: nous
+  max_iterations: 250
+  child_timeout_seconds: 300
+  max_concurrent_children: 5
+  max_spawn_depth: 2
+  orchestrator_enabled: true
+moa:
+  default_preset: cost_optimized
+  active_preset: cost_optimized
+  presets:
+    cost_optimized:
+      aggregator:
+        model: openai/gpt-6-astra
+        provider: nous
+      enabled: true
+      fanout: user_turn
+      max_tokens: 4096
+      reference_models:
+      - model: google/gemini-4-argon
+        provider: nous
+      - model: deepseek/deepseek-v4.1-flash
+        provider: nous
+      - model: stepfun/step-3.7-flash:free
+        provider: nous
+      - base_url: http://localhost:11434/v1
+        model: qwen3:4b
+        provider: custom
+    hermes_free_first:
+      aggregator:
+        model: stepfun/step-3.7-flash:free
+        provider: nous
+      enabled: true
+      fanout: user_turn
+      max_tokens: 4096
+      reference_models:
+      - model: stepfun/step-3.7-flash:free
+        provider: nous
+      - model: upstage/solar-pro4:free
+        provider: nous
+      - model: poolside/laguna-xs-2.1:free
+        provider: nous
+      - base_url: http://localhost:11434/v1
+        model: qwen2.5:3b
+        provider: custom
+    local_only:
+      aggregator:
+        base_url: http://localhost:11434/v1
+        model: qwen3:4b
+        provider: custom
+      enabled: true
+      fanout: user_turn
+      max_tokens: 4096
+      reference_models:
+      - base_url: http://localhost:11434/v1
+        model: qwen3:4b
+        provider: custom
