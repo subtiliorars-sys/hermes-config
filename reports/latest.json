@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T00:49:50.619501+00:00",
+  "checked_at": "2026-10-27T00:55:06.187367+00:00",
   "configured_routes": [
     {
       "advertised_free": false,
@@ -2260,8 +2260,8 @@
           ],
           "pricing": {
             "completion": "0.0000080000",
-            "input_cache_read": "0.0000002400",
-            "prompt": "0.0000002374"
+            "input_cache_read": "0.0000002600",
+            "prompt": "0.0000002565"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -5428,9 +5428,14 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000200000",
-            "input_cache_read": "0.0000001400",
-            "prompt": "0.0000001500"
+            "completion": "0.0000089400",
+            "input_cache_read": "0.0000001900",
+            "original": {
+              "completion": "0.0000150000",
+              "input_cache_read": "0.0000003000",
+              "prompt": "0.0000030000"
+            },
+            "prompt": "0.0000001900"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -12901,8 +12906,8 @@
           ],
           "pricing": {
             "completion": "0.0000080000",
-            "input_cache_read": "0.0000002400",
-            "prompt": "0.0000002374"
+            "input_cache_read": "0.0000002600",
+            "prompt": "0.0000002565"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -13048,9 +13053,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000200000",
-            "input_cache_read": "0.0000001400",
-            "prompt": "0.0000001500"
+            "completion": "0.0000089400",
+            "input_cache_read": "0.0000001900",
+            "prompt": "0.0000001900"
           },
           "supported_parameters": [
             "frequency_penalty",

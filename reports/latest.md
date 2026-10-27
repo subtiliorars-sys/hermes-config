@@ -1,6 +1,6 @@
 # Model catalog audit
 
-Checked: 2026-10-27T00:49:50.619501+00:00
+Checked: 2026-10-27T00:55:06.187367+00:00
 
 Listing/pricing audit only; no inference calls, quality ranking, entitlement test or automatic routing changes.
 
