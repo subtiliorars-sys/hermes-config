@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-30T06:38:33.754807+00:00",
+  "checked_at": "2026-11-02T06:41:58.689865+00:00",
   "configured_routes": [
     {
       "advertised_free": false,
@@ -37,11 +37,10 @@
       "status": "listed"
     },
     {
-      "advertised_free": true,
       "model": "poolside/laguna-xs-2.1:free",
       "path": "fallback_providers[4]",
       "provider": "nous",
-      "status": "listed"
+      "status": "missing-from-catalog"
     },
     {
       "model": "upstage/solar-pro4:free",
@@ -90,11 +89,10 @@
       "status": "listed"
     },
     {
-      "advertised_free": true,
       "model": "poolside/laguna-xs-2.1:free",
       "path": "auxiliary.compression.fallback_chain[1]",
       "provider": "nous",
-      "status": "listed"
+      "status": "missing-from-catalog"
     },
     {
       "advertised_free": true,
@@ -111,11 +109,10 @@
       "status": "listed"
     },
     {
-      "advertised_free": true,
       "model": "poolside/laguna-xs-2.1:free",
       "path": "auxiliary.review.fallback_chain[1]",
       "provider": "nous",
-      "status": "listed"
+      "status": "missing-from-catalog"
     },
     {
       "advertised_free": true,
@@ -132,11 +129,10 @@
       "status": "listed"
     },
     {
-      "advertised_free": true,
       "model": "poolside/laguna-xs-2.1:free",
       "path": "auxiliary.title_generation.fallback_chain[1]",
       "provider": "nous",
-      "status": "listed"
+      "status": "missing-from-catalog"
     },
     {
       "advertised_free": true,
@@ -153,11 +149,10 @@
       "status": "listed"
     },
     {
-      "advertised_free": true,
       "model": "poolside/laguna-xs-2.1:free",
       "path": "auxiliary.curator.fallback_chain[1]",
       "provider": "nous",
-      "status": "listed"
+      "status": "missing-from-catalog"
     },
     {
       "advertised_free": true,
@@ -174,11 +169,10 @@
       "status": "listed"
     },
     {
-      "advertised_free": true,
       "model": "poolside/laguna-xs-2.1:free",
       "path": "auxiliary.background_review.fallback_chain[1]",
       "provider": "nous",
-      "status": "listed"
+      "status": "missing-from-catalog"
     },
     {
       "advertised_free": true,
@@ -209,11 +203,10 @@
       "status": "listed"
     },
     {
-      "advertised_free": true,
       "model": "poolside/laguna-xs-2.1:free",
       "path": "auxiliary.session_search.fallback_chain[1]",
       "provider": "nous",
-      "status": "listed"
+      "status": "missing-from-catalog"
     },
     {
       "advertised_free": true,
@@ -230,11 +223,10 @@
       "status": "listed"
     },
     {
-      "advertised_free": true,
       "model": "poolside/laguna-xs-2.1:free",
       "path": "auxiliary.web_extract.fallback_chain[1]",
       "provider": "nous",
-      "status": "listed"
+      "status": "missing-from-catalog"
     },
     {
       "advertised_free": false,
@@ -298,11 +290,10 @@
       "status": "missing-from-catalog"
     },
     {
-      "advertised_free": true,
       "model": "poolside/laguna-xs-2.1:free",
       "path": "moa.presets.hermes_free_first.reference_models[2]",
       "provider": "nous",
-      "status": "listed"
+      "status": "missing-from-catalog"
     },
     {
       "model": "qwen2.5:3b",
@@ -326,8 +317,8 @@
   "kind": "catalog-audit-not-inference-benchmark",
   "providers": {
     "nous": {
-      "count": 382,
-      "free_count": 6,
+      "count": 378,
+      "free_count": 4,
       "models": [
         {
           "advertised_free": false,
@@ -1726,9 +1717,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000004200",
-            "input_cache_read": "0.0000000280",
-            "prompt": "0.0000002800"
+            "completion": "0.0000003800",
+            "input_cache_read": "0.0000001300",
+            "prompt": "0.0000002600"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -1951,90 +1942,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000039600",
-            "input_cache_read": "0.0000000440",
-            "overrides": [
-              {
-                "completion": "0.00000198",
-                "input_cache_read": "0.000000022",
-                "prompt": "0.00000066",
-                "utc_days": [
-                  "saturday",
-                  "sunday"
-                ]
-              },
-              {
-                "completion": "0.00000198",
-                "input_cache_read": "0.000000022",
-                "prompt": "0.00000066",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 100,
-                "utc_start": 0
-              },
-              {
-                "completion": "0.00000396",
-                "input_cache_read": "0.000000044",
-                "prompt": "0.00000132",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 400,
-                "utc_start": 100
-              },
-              {
-                "completion": "0.00000198",
-                "input_cache_read": "0.000000022",
-                "prompt": "0.00000066",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 600,
-                "utc_start": 400
-              },
-              {
-                "completion": "0.00000396",
-                "input_cache_read": "0.000000044",
-                "prompt": "0.00000132",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 1000,
-                "utc_start": 600
-              },
-              {
-                "completion": "0.00000198",
-                "input_cache_read": "0.000000022",
-                "prompt": "0.00000066",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 0,
-                "utc_start": 1000
-              }
-            ],
-            "prompt": "0.0000013200"
+            "completion": "0.0000040000",
+            "input_cache_read": "0.0000001100",
+            "prompt": "0.0000001150"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -3377,9 +3287,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000003000",
-            "input_cache_read": "0.0000000500",
-            "prompt": "0.0000000900"
+            "completion": "0.0000001020",
+            "input_cache_read": "0.0000000170",
+            "prompt": "0.0000000340"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -3422,6 +3332,7 @@
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -4165,9 +4076,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000012000",
+            "completion": "0.0000009500",
             "input_cache_read": "0.0000000300",
-            "prompt": "0.0000003000"
+            "prompt": "0.0000002700"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -4270,6 +4181,22 @@
           "pricing": {
             "completion": "0.0000006000",
             "input_cache_read": "0.0000000150",
+            "overrides": [
+              {
+                "completion": "0.0000003",
+                "input_cache_read": "0.0000000075",
+                "prompt": "0.000000075",
+                "utc_end": 100,
+                "utc_start": 1500
+              },
+              {
+                "completion": "0.0000006",
+                "input_cache_read": "0.000000015",
+                "prompt": "0.00000015",
+                "utc_end": 1500,
+                "utc_start": 100
+              }
+            ],
             "prompt": "0.0000001500"
           },
           "supported_parameters": [
@@ -5056,9 +4983,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.0000031000",
+            "completion": "0.0000035000",
             "input_cache_read": "0.0000001500",
-            "prompt": "0.0000005600"
+            "prompt": "0.0000006000"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -5094,8 +5021,8 @@
           ],
           "pricing": {
             "completion": "0.0000150000",
-            "input_cache_read": "0.0000001900",
-            "prompt": "0.0000002000"
+            "input_cache_read": "0.0000001820",
+            "prompt": "0.0000001920"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -5463,7 +5390,6 @@
             "logit_bias",
             "logprobs",
             "max_completion_tokens",
-            "max_tokens",
             "presence_penalty",
             "response_format",
             "seed",
@@ -7819,9 +7745,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000006000",
-            "input_cache_read": "0.0000000750",
-            "prompt": "0.0000001500"
+            "completion": "0.0000000730",
+            "input_cache_read": "0.0000000180",
+            "prompt": "0.0000000200"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -7887,9 +7813,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000000900",
-            "input_cache_read": "0.0000000090",
-            "prompt": "0.0000000180"
+            "completion": "0.0000001300",
+            "input_cache_read": "0.0000000300",
+            "prompt": "0.0000000300"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -8097,9 +8023,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.0000010000",
+            "completion": "0.0000005000",
             "input_cache_read": "0.0000000030",
-            "prompt": "0.0000002500"
+            "prompt": "0.0000000500"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -8177,100 +8103,6 @@
             "prompt": "0.0000000300"
           },
           "supported_parameters": []
-        },
-        {
-          "advertised_free": false,
-          "context_length": 1048576,
-          "id": "poolside/laguna-s-2.1",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.0000001800",
-            "input_cache_read": "0.0000000090",
-            "original": {
-              "completion": "0.0000002000",
-              "input_cache_read": "0.0000000100",
-              "prompt": "0.0000001000"
-            },
-            "prompt": "0.0000000900"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": true,
-          "context_length": 262144,
-          "id": "poolside/laguna-s-2.1:free",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0",
-            "input_cache_read": "0",
-            "prompt": "0"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": false,
-          "context_length": 262144,
-          "id": "poolside/laguna-xs-2.1",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.0000001200",
-            "input_cache_read": "0.0000000300",
-            "original": {
-              "completion": "0.0000002000",
-              "input_cache_read": "0.0000000500",
-              "prompt": "0.0000001000"
-            },
-            "prompt": "0.0000000600"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": true,
-          "context_length": 262144,
-          "id": "poolside/laguna-xs-2.1:free",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0",
-            "input_cache_read": "0",
-            "prompt": "0"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
         },
         {
           "advertised_free": false,
@@ -9228,8 +9060,8 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000032000",
-            "prompt": "0.0000003200"
+            "completion": "0.0000027000",
+            "prompt": "0.0000004500"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -11113,9 +10945,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000019800",
-            "input_cache_read": "0.0000000990",
-            "prompt": "0.0000005400"
+            "completion": "0.0000022000",
+            "input_cache_read": "0.0000001100",
+            "prompt": "0.0000006000"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -11738,9 +11570,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.0000011400",
-            "input_cache_read": "0.0000000336",
-            "prompt": "0.0000000339"
+            "completion": "0.0000005000",
+            "input_cache_read": "0.0000000050",
+            "prompt": "0.0000000350"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -11775,7 +11607,7 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000040000",
+            "completion": "0.0000080000",
             "input_cache_read": "0.0000001000",
             "prompt": "0.0000001035"
           },
@@ -11810,9 +11642,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000001518",
-            "input_cache_read": "0.0000000280",
-            "prompt": "0.0000000429"
+            "completion": "0.0000003000",
+            "input_cache_read": "0.0000000350",
+            "prompt": "0.0000000590"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -11923,9 +11755,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000093388",
-            "input_cache_read": "0.0000001900",
-            "prompt": "0.0000001900"
+            "completion": "0.0000071500",
+            "input_cache_read": "0.0000000748",
+            "prompt": "0.0000001495"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -12206,9 +12038,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000000701",
-            "input_cache_read": "0.0000000300",
-            "prompt": "0.0000000457"
+            "completion": "0.0000000923",
+            "input_cache_read": "0.0000000285",
+            "prompt": "0.0000000285"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -12274,8 +12106,8 @@
       "source": "https://inference-api.nousresearch.com/v1/models"
     },
     "openrouter": {
-      "count": 456,
-      "free_count": 19,
+      "count": 452,
+      "free_count": 17,
       "models": [
         {
           "advertised_free": false,
@@ -14081,9 +13913,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.00000042",
-            "input_cache_read": "0.000000028",
-            "prompt": "0.00000028"
+            "completion": "0.00000038",
+            "input_cache_read": "0.00000013",
+            "prompt": "0.00000026"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -14250,9 +14082,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.000001632468",
-            "input_cache_read": "0.0000000680195",
-            "prompt": "0.000000816234"
+            "completion": "0.0000032",
+            "input_cache_read": "0.000000135",
+            "prompt": "0.0000016"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -14286,90 +14118,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.00000396",
-            "input_cache_read": "0.000000044",
-            "overrides": [
-              {
-                "completion": "0.00000198",
-                "input_cache_read": "0.000000022",
-                "prompt": "0.00000066",
-                "utc_days": [
-                  "saturday",
-                  "sunday"
-                ]
-              },
-              {
-                "completion": "0.00000198",
-                "input_cache_read": "0.000000022",
-                "prompt": "0.00000066",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 100,
-                "utc_start": 0
-              },
-              {
-                "completion": "0.00000396",
-                "input_cache_read": "0.000000044",
-                "prompt": "0.00000132",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 400,
-                "utc_start": 100
-              },
-              {
-                "completion": "0.00000198",
-                "input_cache_read": "0.000000022",
-                "prompt": "0.00000066",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 600,
-                "utc_start": 400
-              },
-              {
-                "completion": "0.00000396",
-                "input_cache_read": "0.000000044",
-                "prompt": "0.00000132",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 1000,
-                "utc_start": 600
-              },
-              {
-                "completion": "0.00000198",
-                "input_cache_read": "0.000000022",
-                "prompt": "0.00000066",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 0,
-                "utc_start": 1000
-              }
-            ],
-            "prompt": "0.00000132"
+            "completion": "0.000004",
+            "input_cache_read": "0.00000011",
+            "prompt": "0.000000115"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -15919,9 +15670,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000003",
-            "input_cache_read": "0.00000005",
-            "prompt": "0.00000009"
+            "completion": "0.000000097",
+            "input_cache_read": "0.000000016",
+            "prompt": "0.000000032"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -15989,6 +15740,7 @@
             "include_reasoning",
             "logit_bias",
             "logprobs",
+            "max_completion_tokens",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -16620,8 +16372,8 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.00000033",
-            "prompt": "0.00000005"
+            "completion": "0.000000335",
+            "prompt": "0.0000000509"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -17161,9 +16913,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000012",
+            "completion": "0.00000095",
             "input_cache_read": "0.00000003",
-            "prompt": "0.0000003"
+            "prompt": "0.00000027"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -17266,6 +17018,22 @@
           "pricing": {
             "completion": "0.0000006",
             "input_cache_read": "0.000000015",
+            "overrides": [
+              {
+                "completion": "0.0000003",
+                "input_cache_read": "0.0000000075",
+                "prompt": "0.000000075",
+                "utc_end": 100,
+                "utc_start": 1500
+              },
+              {
+                "completion": "0.0000006",
+                "input_cache_read": "0.000000015",
+                "prompt": "0.00000015",
+                "utc_end": 1500,
+                "utc_start": 100
+              }
+            ],
             "prompt": "0.00000015"
           },
           "supported_parameters": [
@@ -18095,9 +17863,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.0000031",
+            "completion": "0.0000035",
             "input_cache_read": "0.00000015",
-            "prompt": "0.00000056"
+            "prompt": "0.0000006"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -18776,7 +18544,6 @@
             "logit_bias",
             "logprobs",
             "max_completion_tokens",
-            "max_tokens",
             "presence_penalty",
             "response_format",
             "seed",
@@ -21630,9 +21397,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000006",
-            "input_cache_read": "0.000000075",
-            "prompt": "0.00000015"
+            "completion": "0.000000093",
+            "input_cache_read": "0.000000023",
+            "prompt": "0.000000025"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -21698,9 +21465,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.00000009",
-            "input_cache_read": "0.000000009",
-            "prompt": "0.000000018"
+            "completion": "0.00000013",
+            "input_cache_read": "0.00000003",
+            "prompt": "0.00000003"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -22102,9 +21869,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.000001",
+            "completion": "0.0000005",
             "input_cache_read": "0.000000003",
-            "prompt": "0.00000025"
+            "prompt": "0.00000005"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -22302,88 +22069,6 @@
             "top_k",
             "top_p",
             "web_search_options"
-          ]
-        },
-        {
-          "advertised_free": false,
-          "context_length": 1048576,
-          "id": "poolside/laguna-s-2.1",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.00000018",
-            "input_cache_read": "0.000000009",
-            "prompt": "0.00000009"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": true,
-          "context_length": 262144,
-          "id": "poolside/laguna-s-2.1:free",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0",
-            "prompt": "0"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": false,
-          "context_length": 262144,
-          "id": "poolside/laguna-xs-2.1",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.00000012",
-            "input_cache_read": "0.00000003",
-            "prompt": "0.00000006"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": true,
-          "context_length": 262144,
-          "id": "poolside/laguna-xs-2.1:free",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0",
-            "prompt": "0"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools"
           ]
         },
         {
@@ -23372,8 +23057,8 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000032",
-            "prompt": "0.00000032"
+            "completion": "0.0000027",
+            "prompt": "0.00000045"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -25584,9 +25269,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.00000198",
-            "input_cache_read": "0.000000099",
-            "prompt": "0.00000054"
+            "completion": "0.0000022",
+            "input_cache_read": "0.00000011",
+            "prompt": "0.0000006"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -25740,7 +25425,7 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.000007",
+            "completion": "0.0000068",
             "input_cache_read": "0.000000005",
             "prompt": "0.000000006"
           },
@@ -25814,9 +25499,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000000701",
-            "input_cache_read": "0.00000003",
-            "prompt": "0.0000000457"
+            "completion": "0.0000000923",
+            "input_cache_read": "0.0000000285",
+            "prompt": "0.0000000285"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -26139,9 +25824,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.00000114",
-            "input_cache_read": "0.0000000336",
-            "prompt": "0.0000000339"
+            "completion": "0.0000005",
+            "input_cache_read": "0.000000005",
+            "prompt": "0.000000035"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -26176,7 +25861,7 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.000004",
+            "completion": "0.000008",
             "input_cache_read": "0.0000001",
             "prompt": "0.0000001035"
           },
@@ -26212,8 +25897,8 @@
           ],
           "pricing": {
             "completion": "0.0000003",
-            "input_cache_read": "0.0000000409",
-            "prompt": "0.0000000419"
+            "input_cache_read": "0.000000035",
+            "prompt": "0.000000059"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -26324,9 +26009,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.00000894",
-            "input_cache_read": "0.00000019",
-            "prompt": "0.00000019"
+            "completion": "0.00000715",
+            "input_cache_read": "0.00000007475",
+            "prompt": "0.0000001495"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -26608,9 +26293,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000000701",
-            "input_cache_read": "0.00000003",
-            "prompt": "0.0000000457"
+            "completion": "0.0000000923",
+            "input_cache_read": "0.0000000285",
+            "prompt": "0.0000000285"
           },
           "supported_parameters": [
             "frequency_penalty",
