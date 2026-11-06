@@ -1,11 +1,11 @@
 # Model catalog audit
 
-Checked: 2026-11-02T06:41:58.689865+00:00
+Checked: 2026-11-06T06:34:39.705287+00:00
 
 Listing/pricing audit only; no inference calls, quality ranking, entitlement test or automatic routing changes.
 
-- nous: 378 listed; 4 advertised zero-cost text tokens
-- openrouter: 452 listed; 17 advertised zero-cost text tokens
+- nous: 385 listed; 5 advertised zero-cost text tokens
+- openrouter: 454 listed; 16 advertised zero-cost text tokens
 
 | Config path | Provider | Model | Status |
 |---|---|---|---|
@@ -18,7 +18,7 @@ Listing/pricing audit only; no inference calls, quality ranking, entitlement tes
 | fallback_providers[5] | nous | upstage/solar-pro4:free | missing-from-catalog |
 | fallback_providers[6] | nous | tencent/hy3:free | missing-from-catalog |
 | fallback_providers[7] | custom | qwen3:4b | local-not-checked |
-| auxiliary.vision | nous | ornith/ornith-1.5-122b:free | listed |
+| auxiliary.vision | nous | ornith/ornith-1.5-122b:free | missing-from-catalog |
 | auxiliary.vision.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
 | auxiliary.compression | nous | stepfun/step-3.7-flash:free | listed |
 | auxiliary.compression.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
