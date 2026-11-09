@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-06T06:34:39.705287+00:00",
+  "checked_at": "2026-11-09T06:42:51.990531+00:00",
   "configured_routes": [
     {
       "advertised_free": false,
@@ -316,7 +316,7 @@
   "kind": "catalog-audit-not-inference-benchmark",
   "providers": {
     "nous": {
-      "count": 385,
+      "count": 393,
       "free_count": 5,
       "models": [
         {
@@ -902,19 +902,15 @@
           "id": "anthropic/claude-opus-4.8",
           "input_modalities": [
             "text",
-            "image",
-            "file"
+            "image"
           ],
           "pricing": {
             "completion": "0.0000250000",
             "input_cache_read": "0.0000005000",
             "input_cache_write": "0.0000062500",
-            "input_cache_write_1h": "0.00001",
-            "prompt": "0.0000050000",
-            "web_search": "0.0100000000"
+            "prompt": "0.0000050000"
           },
           "supported_parameters": [
-            "include_reasoning",
             "max_completion_tokens",
             "max_tokens",
             "reasoning",
@@ -1442,6 +1438,32 @@
         },
         {
           "advertised_free": false,
+          "context_length": 256000,
+          "id": "cohere/command-a",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.0000100000",
+            "prompt": "0.0000025000"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
           "context_length": 192000,
           "id": "cohere/command-a-plus",
           "input_modalities": [
@@ -1464,6 +1486,7 @@
             "stop",
             "structured_outputs",
             "temperature",
+            "tool_choice",
             "tools",
             "top_k",
             "top_p"
@@ -1524,6 +1547,32 @@
         {
           "advertised_free": false,
           "context_length": 128000,
+          "id": "cohere/command-r7b-12-2024",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.0000001500",
+            "prompt": "0.0000000375"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 128000,
           "id": "cohere/embed-5-fast",
           "input_modalities": [
             "text",
@@ -1559,8 +1608,8 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000010287",
-            "prompt": "0.0000002574"
+            "completion": "0.0000008900",
+            "prompt": "0.0000003200"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -1856,6 +1905,39 @@
         {
           "advertised_free": false,
           "context_length": 1048576,
+          "id": "deepseek/deepseek-v4-flash-0731:batch",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.0000001440",
+            "input_cache_read": "0.0000000120",
+            "prompt": "0.0000000480"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 1048576,
           "id": "deepseek/deepseek-v4-flash-vision-exp",
           "input_modalities": [
             "text",
@@ -1934,7 +2016,7 @@
           ],
           "pricing": {
             "completion": "0.0000044400",
-            "input_cache_read": "0.0000001060",
+            "input_cache_read": "0.0000000970",
             "prompt": "0.0000001110"
           },
           "supported_parameters": [
@@ -2022,6 +2104,39 @@
         {
           "advertised_free": false,
           "context_length": 1048576,
+          "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "pricing": {
+            "completion": "0.0000002000",
+            "input_cache_read": "0.0000000020",
+            "prompt": "0.0000000110"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 1048576,
           "id": "deepseek/deepseek-v4.1-flash:US",
           "input_modalities": [
             "text",
@@ -2054,9 +2169,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.0000003360",
-            "input_cache_read": "0.0000000034",
-            "prompt": "0.0000001120"
+            "completion": "0.0000002000",
+            "input_cache_read": "0.0000000020",
+            "prompt": "0.0000000110"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -3120,6 +3235,21 @@
         },
         {
           "advertised_free": false,
+          "context_length": 20000,
+          "id": "google/gemini-embedding-001:batch",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "audio": "0.0000000000",
+            "completion": "0.0000000000",
+            "image": "0.0000000000",
+            "prompt": "0.0000000750"
+          },
+          "supported_parameters": []
+        },
+        {
+          "advertised_free": false,
           "context_length": 8192,
           "id": "google/gemini-embedding-2",
           "input_modalities": [
@@ -3242,7 +3372,7 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.0000003500",
+            "completion": "0.0000004500",
             "input_cache_read": "0.0000000400",
             "prompt": "0.0000000800"
           },
@@ -3376,91 +3506,6 @@
         },
         {
           "advertised_free": false,
-          "context_length": 128000,
-          "id": "inception/mercury-2",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.0000007500",
-            "input_cache_read": "0.0000000250",
-            "prompt": "0.0000002500"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": false,
-          "context_length": 260000,
-          "id": "inception/mercury-2.5",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.0000001500",
-            "input_cache_read": "0.0000000040",
-            "original": {
-              "completion": "0.0000007500",
-              "input_cache_read": "0.0000000200",
-              "prompt": "0.0000002000"
-            },
-            "prompt": "0.0000000400"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": false,
-          "context_length": 1000000,
-          "id": "inception/mercury-3",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.0000003500",
-            "input_cache_read": "0.0000000100",
-            "original": {
-              "completion": "0.0000007000",
-              "input_cache_read": "0.0000000200",
-              "prompt": "0.0000002000"
-            },
-            "prompt": "0.0000001000"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": false,
           "context_length": 262144,
           "id": "inclusionai/ling-3.0-flash",
           "input_modalities": [
@@ -3564,9 +3609,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000002250",
-            "input_cache_read": "0.0000000150",
-            "prompt": "0.0000000750"
+            "completion": "0.0000001350",
+            "input_cache_read": "0.0000000090",
+            "prompt": "0.0000000450"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -3661,6 +3706,40 @@
         },
         {
           "advertised_free": false,
+          "context_length": 262144,
+          "id": "liquid/lfm-3-1.7b",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.0000002000",
+            "input_cache_read": "0.0000000200",
+            "prompt": "0.0000000800"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_completion_tokens",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
           "context_length": 1048756,
           "id": "meituan/longcat-2.0",
           "input_modalities": [
@@ -3724,9 +3803,8 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000000800",
-            "input_cache_read": "0.0000000250",
-            "prompt": "0.0000000500"
+            "completion": "0.0000000400",
+            "prompt": "0.0000000200"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -3853,6 +3931,40 @@
             "completion": "0.0000012000",
             "input_cache_read": "0.0000000400",
             "prompt": "0.0000003000"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 131072,
+          "id": "meta/muse-glimmer-30b:batch",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "pricing": {
+            "completion": "0.0000009600",
+            "input_cache_read": "0.0000000320",
+            "prompt": "0.0000002400"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -4043,9 +4155,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000009500",
-            "input_cache_read": "0.0000000300",
-            "prompt": "0.0000002700"
+            "completion": "0.0000012000",
+            "input_cache_read": "0.0000000600",
+            "prompt": "0.0000003000"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -4186,6 +4298,39 @@
             "tools",
             "top_k",
             "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 524288,
+          "id": "minimax/minimax-m3:batch",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "pricing": {
+            "completion": "0.0000008800",
+            "input_cache_read": "0.0000000448",
+            "prompt": "0.0000002240"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
             "top_p"
           ]
         },
@@ -4892,6 +5037,7 @@
           },
           "supported_parameters": [
             "frequency_penalty",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
@@ -4903,6 +5049,7 @@
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ]
         },
@@ -4945,9 +5092,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.0000025000",
-            "input_cache_read": "0.0000001500",
-            "prompt": "0.0000005000"
+            "completion": "0.0000033250",
+            "input_cache_read": "0.0000002090",
+            "prompt": "0.0000005320"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -5154,14 +5301,15 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000114000",
-            "input_cache_read": "0.0000002280",
-            "prompt": "0.0000022800"
+            "completion": "0.0000060000",
+            "input_cache_read": "0.0000002260",
+            "prompt": "0.0000009170"
           },
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -5176,6 +5324,7 @@
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ]
         },
@@ -5246,9 +5395,8 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000024000",
-            "input_cache_read": "0.0000001500",
-            "prompt": "0.0000003000"
+            "completion": "0.0000004000",
+            "prompt": "0.0000000750"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -7661,9 +7809,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000000800",
-            "input_cache_read": "0.0000000200",
-            "prompt": "0.0000000220"
+            "completion": "0.0000006000",
+            "input_cache_read": "0.0000000750",
+            "prompt": "0.0000001500"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -7729,9 +7877,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000001300",
-            "input_cache_read": "0.0000000300",
-            "prompt": "0.0000000300"
+            "completion": "0.0000000900",
+            "input_cache_read": "0.0000000090",
+            "prompt": "0.0000000180"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -8797,8 +8945,8 @@
           ],
           "pricing": {
             "completion": "0.0000036000",
-            "input_cache_read": "0.0000003000",
-            "prompt": "0.0000005000"
+            "input_cache_read": "0.0000001200",
+            "prompt": "0.0000006000"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -8978,8 +9126,8 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000027000",
-            "prompt": "0.0000004500"
+            "completion": "0.0000032000",
+            "prompt": "0.0000003200"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -9340,6 +9488,41 @@
             "top_a",
             "top_k",
             "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 262144,
+          "id": "qwen/qwen3.8-27b:batch",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "pricing": {
+            "completion": "0.0000020000",
+            "input_cache_read": "0.0000000400",
+            "prompt": "0.0000001600"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
             "top_p"
           ]
         },
@@ -10015,25 +10198,17 @@
             "prompt": "0.0000001668"
           },
           "supported_parameters": [
-            "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_completion_tokens",
             "max_tokens",
-            "min_p",
-            "presence_penalty",
             "reasoning",
             "reasoning_effort",
-            "repetition_penalty",
             "response_format",
-            "seed",
             "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
+            "tools"
           ]
         },
         {
@@ -10160,6 +10335,39 @@
             "completion": "0.0000012000",
             "input_cache_read": "0.0000001000",
             "prompt": "0.0000004500"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 524288,
+          "id": "thinkingmachines/inkling-small:batch",
+          "input_modalities": [
+            "text",
+            "image",
+            "audio"
+          ],
+          "pricing": {
+            "completion": "0.0000009600",
+            "input_cache_read": "0.0000000800",
+            "prompt": "0.0000003600"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -11145,6 +11353,41 @@
         {
           "advertised_free": false,
           "context_length": 1048576,
+          "id": "z-ai/glm-5.2:batch",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.0000012710",
+            "input_cache_read": "0.0000002100",
+            "prompt": "0.0000006230"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 1048576,
           "id": "z-ai/glm-5.3",
           "input_modalities": [
             "text"
@@ -11428,6 +11671,7 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -11442,6 +11686,7 @@
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ]
         },
@@ -11688,7 +11933,7 @@
           "pricing": {
             "completion": "0.0000003000",
             "input_cache_read": "0.0000000350",
-            "prompt": "0.0000000590"
+            "prompt": "0.0000000434"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -11799,9 +12044,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000105539",
-            "input_cache_read": "0.0000001600",
-            "prompt": "0.0000001624"
+            "completion": "0.0000101489",
+            "input_cache_read": "0.0000001800",
+            "prompt": "0.0000001824"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -12087,9 +12332,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000000923",
-            "input_cache_read": "0.0000000284",
-            "prompt": "0.0000000284"
+            "completion": "0.0000000830",
+            "input_cache_read": "0.0000000300",
+            "prompt": "0.0000000335"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -12155,7 +12400,7 @@
       "source": "https://inference-api.nousresearch.com/v1/models"
     },
     "openrouter": {
-      "count": 454,
+      "count": 461,
       "free_count": 16,
       "models": [
         {
@@ -12411,6 +12656,7 @@
           ],
           "pricing": {
             "completion": "0.000005",
+            "input_cache_read": "0.0000025",
             "prompt": "0.0000025"
           },
           "supported_parameters": [
@@ -13670,6 +13916,8 @@
             "stop",
             "structured_outputs",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_p"
           ]
@@ -13698,6 +13946,7 @@
             "stop",
             "structured_outputs",
             "temperature",
+            "tool_choice",
             "tools",
             "top_k",
             "top_p"
@@ -13775,6 +14024,8 @@
             "stop",
             "structured_outputs",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_p"
           ]
@@ -13813,8 +14064,8 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000010287",
-            "prompt": "0.0000002574"
+            "completion": "0.00000089",
+            "prompt": "0.00000032"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -14060,7 +14311,7 @@
           "pricing": {
             "completion": "0.0000003",
             "input_cache_read": "0.000000035",
-            "prompt": "0.000000059"
+            "prompt": "0.0000000434"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -14084,6 +14335,39 @@
             "top_a",
             "top_k",
             "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 1048576,
+          "id": "deepseek/deepseek-v4-flash-0731:batch",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.000000144",
+            "input_cache_read": "0.000000012",
+            "prompt": "0.000000048"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
             "top_p"
           ]
         },
@@ -14168,7 +14452,7 @@
           ],
           "pricing": {
             "completion": "0.00000444",
-            "input_cache_read": "0.000000106",
+            "input_cache_read": "0.000000097",
             "prompt": "0.000000111"
           },
           "supported_parameters": [
@@ -14203,9 +14487,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.00000054",
+            "completion": "0.000000567",
             "input_cache_read": "0.000000018",
-            "prompt": "0.0000000486"
+            "prompt": "0.000000051"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -14241,90 +14525,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.0000012",
-            "input_cache_read": "0.000000006",
-            "overrides": [
-              {
-                "completion": "0.0000006",
-                "input_cache_read": "0.000000003",
-                "prompt": "0.00000015",
-                "utc_days": [
-                  "saturday",
-                  "sunday"
-                ]
-              },
-              {
-                "completion": "0.0000006",
-                "input_cache_read": "0.000000003",
-                "prompt": "0.00000015",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 100,
-                "utc_start": 0
-              },
-              {
-                "completion": "0.0000012",
-                "input_cache_read": "0.000000006",
-                "prompt": "0.0000003",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 400,
-                "utc_start": 100
-              },
-              {
-                "completion": "0.0000006",
-                "input_cache_read": "0.000000003",
-                "prompt": "0.00000015",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 600,
-                "utc_start": 400
-              },
-              {
-                "completion": "0.0000012",
-                "input_cache_read": "0.000000006",
-                "prompt": "0.0000003",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 1000,
-                "utc_start": 600
-              },
-              {
-                "completion": "0.0000006",
-                "input_cache_read": "0.000000003",
-                "prompt": "0.00000015",
-                "utc_days": [
-                  "monday",
-                  "tuesday",
-                  "wednesday",
-                  "thursday",
-                  "friday"
-                ],
-                "utc_end": 0,
-                "utc_start": 1000
-              }
-            ],
-            "prompt": "0.0000003"
+            "completion": "0.0000005",
+            "input_cache_read": "0.000000005",
+            "prompt": "0.000000006"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -14354,15 +14557,48 @@
         {
           "advertised_free": false,
           "context_length": 1048576,
+          "id": "deepseek/deepseek-v4.1-flash-1017:batch",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "pricing": {
+            "completion": "0.0000002",
+            "input_cache_read": "0.000000002",
+            "prompt": "0.000000011"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 1048576,
           "id": "deepseek/deepseek-v4.1-flash:batch",
           "input_modalities": [
             "text",
             "image"
           ],
           "pricing": {
-            "completion": "0.000000336",
-            "input_cache_read": "0.00000000336",
-            "prompt": "0.000000112"
+            "completion": "0.0000002",
+            "input_cache_read": "0.000000002",
+            "prompt": "0.000000011"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -15701,7 +15937,7 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.00000035",
+            "completion": "0.00000045",
             "input_cache_read": "0.00000004",
             "prompt": "0.00000008"
           },
@@ -15985,81 +16221,6 @@
         },
         {
           "advertised_free": false,
-          "context_length": 128000,
-          "id": "inception/mercury-2",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.00000075",
-            "input_cache_read": "0.000000025",
-            "prompt": "0.00000025"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": false,
-          "context_length": 260000,
-          "id": "inception/mercury-2.5",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.00000015",
-            "input_cache_read": "0.000000004",
-            "prompt": "0.00000004"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": false,
-          "context_length": 1000000,
-          "id": "inception/mercury-3",
-          "input_modalities": [
-            "text"
-          ],
-          "pricing": {
-            "completion": "0.00000035",
-            "input_cache_read": "0.00000001",
-            "prompt": "0.0000001"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "reasoning_effort",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ]
-        },
-        {
-          "advertised_free": false,
           "context_length": 262144,
           "id": "inclusionai/ling-3.0-flash",
           "input_modalities": [
@@ -16163,9 +16324,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.000000225",
-            "input_cache_read": "0.000000015",
-            "prompt": "0.000000075"
+            "completion": "0.000000135",
+            "input_cache_read": "0.000000009",
+            "prompt": "0.000000045"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -16348,6 +16509,73 @@
         },
         {
           "advertised_free": false,
+          "context_length": 262144,
+          "id": "liquid/lfm-3-1.7b",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.0000002",
+            "input_cache_read": "0.00000002",
+            "prompt": "0.00000008"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_completion_tokens",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": true,
+          "context_length": 262144,
+          "id": "liquid/lfm-3-1.7b:free",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0",
+            "prompt": "0"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_completion_tokens",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
           "context_length": 8000,
           "id": "mancer/weaver",
           "input_modalities": [
@@ -16355,6 +16583,7 @@
           ],
           "pricing": {
             "completion": "0.00000075",
+            "input_cache_read": "0.0000004",
             "prompt": "0.0000004"
           },
           "supported_parameters": [
@@ -16432,9 +16661,8 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.00000008",
-            "input_cache_read": "0.000000025",
-            "prompt": "0.00000005"
+            "completion": "0.00000004",
+            "prompt": "0.00000002"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -16489,8 +16717,8 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.000000335",
-            "prompt": "0.0000000509"
+            "completion": "0.00000033",
+            "prompt": "0.00000005"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -16641,6 +16869,40 @@
             "completion": "0.0000012",
             "input_cache_read": "0.00000004",
             "prompt": "0.0000003"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 131072,
+          "id": "meta/muse-glimmer-30b:batch",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "pricing": {
+            "completion": "0.00000096",
+            "input_cache_read": "0.000000032",
+            "prompt": "0.00000024"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -16951,9 +17213,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.00000095",
-            "input_cache_read": "0.00000003",
-            "prompt": "0.00000027"
+            "completion": "0.0000012",
+            "input_cache_read": "0.00000006",
+            "prompt": "0.0000003"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -17094,6 +17356,39 @@
             "tools",
             "top_k",
             "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 524288,
+          "id": "minimax/minimax-m3:batch",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "pricing": {
+            "completion": "0.00000088",
+            "input_cache_read": "0.0000000448",
+            "prompt": "0.000000224"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
             "top_p"
           ]
         },
@@ -17777,6 +18072,7 @@
           },
           "supported_parameters": [
             "frequency_penalty",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
@@ -17788,6 +18084,7 @@
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ]
         },
@@ -17830,9 +18127,9 @@
             "image"
           ],
           "pricing": {
-            "completion": "0.0000025",
-            "input_cache_read": "0.00000015",
-            "prompt": "0.0000005"
+            "completion": "0.000003325",
+            "input_cache_read": "0.000000209",
+            "prompt": "0.000000532"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -18014,14 +18311,15 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000114",
-            "input_cache_read": "0.000000228",
-            "prompt": "0.00000228"
+            "completion": "0.000006",
+            "input_cache_read": "0.000000226",
+            "prompt": "0.000000917"
           },
           "supported_parameters": [
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -18036,6 +18334,7 @@
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ]
         },
@@ -18062,6 +18361,23 @@
         },
         {
           "advertised_free": false,
+          "context_length": 81920,
+          "id": "morph/morph-v3-fast:batch",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.0000006",
+            "prompt": "0.0000004"
+          },
+          "supported_parameters": [
+            "max_tokens",
+            "stop",
+            "temperature"
+          ]
+        },
+        {
+          "advertised_free": false,
           "context_length": 262144,
           "id": "morph/morph-v3-large",
           "input_modalities": [
@@ -18070,6 +18386,27 @@
           "pricing": {
             "completion": "0.0000019",
             "prompt": "0.0000009"
+          },
+          "supported_parameters": [
+            "logprobs",
+            "max_tokens",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "top_logprobs"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 262144,
+          "id": "morph/morph-v3-large:batch",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.00000095",
+            "prompt": "0.00000045"
           },
           "supported_parameters": [
             "logprobs",
@@ -18230,9 +18567,8 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.0000024",
-            "input_cache_read": "0.00000015",
-            "prompt": "0.0000003"
+            "completion": "0.0000004",
+            "prompt": "0.000000075"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -18338,27 +18674,6 @@
             "stop",
             "temperature",
             "top_k",
-            "top_p"
-          ]
-        },
-        {
-          "advertised_free": true,
-          "context_length": 128000,
-          "id": "nvidia/nemotron-3.5-content-safety:free",
-          "input_modalities": [
-            "text",
-            "image"
-          ],
-          "pricing": {
-            "completion": "0",
-            "prompt": "0"
-          },
-          "supported_parameters": [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "seed",
-            "temperature",
             "top_p"
           ]
         },
@@ -21390,9 +21705,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.00000008",
-            "input_cache_read": "0.00000002",
-            "prompt": "0.000000022"
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000075",
+            "prompt": "0.00000015"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -21458,9 +21773,9 @@
             "text"
           ],
           "pricing": {
-            "completion": "0.00000013",
-            "input_cache_read": "0.00000003",
-            "prompt": "0.00000003"
+            "completion": "0.00000009",
+            "input_cache_read": "0.000000009",
+            "prompt": "0.000000018"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -22912,8 +23227,8 @@
           ],
           "pricing": {
             "completion": "0.0000036",
-            "input_cache_read": "0.0000003",
-            "prompt": "0.0000005"
+            "input_cache_read": "0.00000012",
+            "prompt": "0.0000006"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -23093,8 +23408,8 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000027",
-            "prompt": "0.00000045"
+            "completion": "0.0000032",
+            "prompt": "0.00000032"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -23455,6 +23770,41 @@
             "top_a",
             "top_k",
             "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 262144,
+          "id": "qwen/qwen3.8-27b:batch",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "pricing": {
+            "completion": "0.000002",
+            "input_cache_read": "0.00000004",
+            "prompt": "0.00000016"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
             "top_p"
           ]
         },
@@ -24267,25 +24617,17 @@
             "prompt": "0.000000417"
           },
           "supported_parameters": [
-            "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_completion_tokens",
             "max_tokens",
-            "min_p",
-            "presence_penalty",
             "reasoning",
             "reasoning_effort",
-            "repetition_penalty",
             "response_format",
-            "seed",
             "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
+            "tools"
           ]
         },
         {
@@ -24493,6 +24835,39 @@
         },
         {
           "advertised_free": false,
+          "context_length": 524288,
+          "id": "thinkingmachines/inkling-small:batch",
+          "input_modalities": [
+            "text",
+            "image",
+            "audio"
+          ],
+          "pricing": {
+            "completion": "0.00000096",
+            "input_cache_read": "0.00000008",
+            "prompt": "0.00000036"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
           "context_length": 1000000,
           "id": "typesafe/jev-router",
           "input_modalities": [
@@ -24585,6 +24960,7 @@
           ],
           "pricing": {
             "completion": "0.00000065",
+            "input_cache_read": "0.00000035",
             "prompt": "0.00000035"
           },
           "supported_parameters": [
@@ -25604,6 +25980,41 @@
         {
           "advertised_free": false,
           "context_length": 1048576,
+          "id": "z-ai/glm-5.2:batch",
+          "input_modalities": [
+            "text"
+          ],
+          "pricing": {
+            "completion": "0.000001271",
+            "input_cache_read": "0.00000021",
+            "prompt": "0.000000623"
+          },
+          "supported_parameters": [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ]
+        },
+        {
+          "advertised_free": false,
+          "context_length": 1048576,
           "id": "z-ai/glm-5.3",
           "input_modalities": [
             "text"
@@ -25647,9 +26058,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000005",
+            "completion": "0.000000083",
             "input_cache_read": "0.00000003",
-            "prompt": "0.00000015"
+            "prompt": "0.0000000335"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -25814,6 +26225,7 @@
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -25828,6 +26240,7 @@
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ]
         },
@@ -26074,7 +26487,7 @@
           "pricing": {
             "completion": "0.0000003",
             "input_cache_read": "0.000000035",
-            "prompt": "0.000000059"
+            "prompt": "0.0000000434"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -26185,9 +26598,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000105539",
-            "input_cache_read": "0.00000016",
-            "prompt": "0.0000001624"
+            "completion": "0.0000101489",
+            "input_cache_read": "0.00000015",
+            "prompt": "0.0000001539"
           },
           "supported_parameters": [
             "frequency_penalty",
@@ -26473,9 +26886,9 @@
             "video"
           ],
           "pricing": {
-            "completion": "0.0000000923",
-            "input_cache_read": "0.0000000284",
-            "prompt": "0.0000000284"
+            "completion": "0.000000083",
+            "input_cache_read": "0.00000003",
+            "prompt": "0.0000000335"
           },
           "supported_parameters": [
             "frequency_penalty",

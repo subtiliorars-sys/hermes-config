@@ -1,11 +1,11 @@
 # Model catalog audit
 
-Checked: 2026-11-06T06:34:39.705287+00:00
+Checked: 2026-11-09T06:42:51.990531+00:00
 
 Listing/pricing audit only; no inference calls, quality ranking, entitlement test or automatic routing changes.
 
-- nous: 385 listed; 5 advertised zero-cost text tokens
-- openrouter: 454 listed; 16 advertised zero-cost text tokens
+- nous: 393 listed; 5 advertised zero-cost text tokens
+- openrouter: 461 listed; 16 advertised zero-cost text tokens
 
 | Config path | Provider | Model | Status |
 |---|---|---|---|
