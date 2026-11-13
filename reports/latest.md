@@ -1,11 +1,11 @@
 # Model catalog audit
 
-Checked: 2026-11-09T06:42:51.990531+00:00
+Checked: 2026-11-13T06:34:35.690029+00:00
 
 Listing/pricing audit only; no inference calls, quality ranking, entitlement test or automatic routing changes.
 
-- nous: 393 listed; 5 advertised zero-cost text tokens
-- openrouter: 461 listed; 16 advertised zero-cost text tokens
+- nous: 400 listed; 3 advertised zero-cost text tokens
+- openrouter: 475 listed; 18 advertised zero-cost text tokens
 
 | Config path | Provider | Model | Status |
 |---|---|---|---|
@@ -13,35 +13,35 @@ Listing/pricing audit only; no inference calls, quality ranking, entitlement tes
 | fallback_providers[0] | nous | google/gemini-4-argon | listed |
 | fallback_providers[1] | nous | deepseek/deepseek-v4.1-flash | listed |
 | fallback_providers[2] | nous | stepfun/step-3.7-flash:free | listed |
-| fallback_providers[3] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| fallback_providers[3] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | fallback_providers[4] | nous | poolside/laguna-xs-2.1:free | missing-from-catalog |
 | fallback_providers[5] | nous | upstage/solar-pro4:free | missing-from-catalog |
 | fallback_providers[6] | nous | tencent/hy3:free | missing-from-catalog |
 | fallback_providers[7] | custom | qwen3:4b | local-not-checked |
 | auxiliary.vision | nous | ornith/ornith-1.5-122b:free | missing-from-catalog |
-| auxiliary.vision.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| auxiliary.vision.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | auxiliary.compression | nous | stepfun/step-3.7-flash:free | listed |
-| auxiliary.compression.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| auxiliary.compression.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | auxiliary.compression.fallback_chain[1] | nous | poolside/laguna-xs-2.1:free | missing-from-catalog |
 | auxiliary.review | nous | stepfun/step-3.7-flash:free | listed |
-| auxiliary.review.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| auxiliary.review.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | auxiliary.review.fallback_chain[1] | nous | poolside/laguna-xs-2.1:free | missing-from-catalog |
 | auxiliary.title_generation | nous | stepfun/step-3.7-flash:free | listed |
-| auxiliary.title_generation.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| auxiliary.title_generation.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | auxiliary.title_generation.fallback_chain[1] | nous | poolside/laguna-xs-2.1:free | missing-from-catalog |
 | auxiliary.curator | nous | stepfun/step-3.7-flash:free | listed |
-| auxiliary.curator.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| auxiliary.curator.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | auxiliary.curator.fallback_chain[1] | nous | poolside/laguna-xs-2.1:free | missing-from-catalog |
 | auxiliary.background_review | nous | stepfun/step-3.7-flash:free | listed |
-| auxiliary.background_review.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| auxiliary.background_review.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | auxiliary.background_review.fallback_chain[1] | nous | poolside/laguna-xs-2.1:free | missing-from-catalog |
 | auxiliary.moa_reference | nous | stepfun/step-3.7-flash:free | listed |
-| auxiliary.moa_reference.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| auxiliary.moa_reference.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | auxiliary.session_search | nous | stepfun/step-3.7-flash:free | listed |
-| auxiliary.session_search.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| auxiliary.session_search.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | auxiliary.session_search.fallback_chain[1] | nous | poolside/laguna-xs-2.1:free | missing-from-catalog |
 | auxiliary.web_extract | nous | stepfun/step-3.7-flash:free | listed |
-| auxiliary.web_extract.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | listed |
+| auxiliary.web_extract.fallback_chain[0] | nous | reflection/beam-1.0-501b-a23b:free | missing-from-catalog |
 | auxiliary.web_extract.fallback_chain[1] | nous | poolside/laguna-xs-2.1:free | missing-from-catalog |
 | delegation | nous | openai/gpt-6-astra | listed |
 | moa.presets.cost_optimized.aggregator | nous | openai/gpt-6-astra | listed |
